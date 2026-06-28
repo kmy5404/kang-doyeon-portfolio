@@ -1845,12 +1845,12 @@
       if (lang === 'en') {
         var src = document.getElementById('main-profile-photo');
         var target = document.getElementById('en-sidebar-photo');
-        if (src && target && !target.src) target.src = src.src;
+        if (src && target && !target.getAttribute('src')) target.src = src.src;
       }
       if (lang === 'kr') {
         var src2 = document.getElementById('main-profile-photo');
         var target2 = document.getElementById('kr2-sidebar-photo');
-        if (src2 && target2 && !target2.src) target2.src = src2.src;
+        if (src2 && target2 && !target2.getAttribute('src')) target2.src = src2.src;
       }
     }
     (function () {
@@ -1870,7 +1870,7 @@
     window.addEventListener('load', function () {
       var src = document.getElementById('main-profile-photo');
       var t1 = document.getElementById('kr2-sidebar-photo');
-      if (src && t1 && !t1.src) t1.src = src.src;
+      if (src && t1 && !t1.getAttribute('src')) t1.src = src.src;
     });
   </script>
 </body>
