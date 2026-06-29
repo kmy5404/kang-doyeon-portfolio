@@ -864,6 +864,13 @@
       top: 5px;
     }
 
+    /* ── MBTI 카드 ── */
+    .en-mbti { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .en-mbti-img { width: 60px; height: 60px; border-radius: 10px; object-fit: cover; border: 2px solid #f0c040; background: #fff; flex-shrink: 0; }
+    .en-mbti-type { display: flex; flex-direction: column; }
+    .en-mbti-code { font-size: 1.15rem; font-weight: 800; color: #fff; letter-spacing: 0.08em; line-height: 1.1; }
+    .en-mbti-role { font-size: 0.7rem; color: #f0c040; margin-top: 3px; line-height: 1.35; }
+
     /* ── Main Content ── */
     .en-main {
       flex: 1;
@@ -1153,6 +1160,12 @@
     }
     .kr2-sb-list li::before { content: '▸'; position: absolute; left: 0; color: #f0c040; font-size: 0.62rem; top: 4px; }
     .kr2-sb-year { color: rgba(255,255,255,0.42); font-size: 0.68rem; }
+    /* ── MBTI 카드 ── */
+    .kr2-mbti { display: flex; align-items: center; gap: 11px; width: 100%; margin-bottom: 10px; }
+    .kr2-mbti-img { width: 58px; height: 58px; border-radius: 10px; object-fit: cover; border: 2px solid #f0c040; background: #fff; flex-shrink: 0; }
+    .kr2-mbti-type { display: flex; flex-direction: column; }
+    .kr2-mbti-code { font-size: 1.1rem; font-weight: 800; color: #fff; letter-spacing: 0.08em; line-height: 1.1; }
+    .kr2-mbti-role { font-size: 0.68rem; color: #f0c040; margin-top: 3px; line-height: 1.35; }
     /* ── 오른쪽 메인 ── */
     .kr2-stat-row {
       display: flex;
@@ -1300,6 +1313,24 @@
       <li>무신사 · 29CM · 에이블리</li>
       <li>롯데온 · SSG · LF몰</li>
       <li>11번가 · G마켓 · 브랜디</li>
+    </ul>
+
+    <div class="kr2-divider"></div>
+
+    <p class="kr2-sb-heading">🧭 MBTI 성격유형</p>
+    <div class="kr2-mbti">
+      <img class="kr2-mbti-img" src="mbti/ENTJ_female.png" alt="ENTJ 성격유형">
+      <div class="kr2-mbti-type">
+        <span class="kr2-mbti-code">ENTJ</span>
+        <span class="kr2-mbti-role">분석가형 · 인간관계 마스터</span>
+      </div>
+    </div>
+    <ul class="kr2-sb-list">
+      <li>타고난 리더십 — 자신감 있는 소통으로 팀을 이끎</li>
+      <li>전략적 사고 — 복잡한 상황 분석·장기 계획 수립</li>
+      <li>빠른 결단력 — 긴급 상황도 냉정하게 판단·실행</li>
+      <li>높은 업무 효율 — 우선순위 최적화로 생산성 향상</li>
+      <li>팀 관리 — 팀원의 강점을 살려 함께 성과 달성</li>
     </ul>
 
   </aside>
@@ -1703,6 +1734,22 @@
       <li>Live Sales ×10 (2025)</li>
       <li>Naver Event +240% (2025)</li>
       <li>Listing Goal 119% (2024)</li>
+    </ul>
+
+    <p class="en-sb-heading"><span>🧭</span> Personality (MBTI)</p>
+    <div class="en-mbti">
+      <img class="en-mbti-img" src="mbti/ENTJ_female.png" alt="ENTJ personality type">
+      <div class="en-mbti-type">
+        <span class="en-mbti-code">ENTJ</span>
+        <span class="en-mbti-role">Analyst · People Mastery</span>
+      </div>
+    </div>
+    <ul class="en-sb-list">
+      <li>Natural leadership — confident, persuasive communicator</li>
+      <li>Strategic thinking — analyzes complexity, plans long-term</li>
+      <li>Decisive &amp; calm under pressure, quick to execute</li>
+      <li>Highly efficient — optimizes priorities, boosts output</li>
+      <li>Team management — leverages each member's strengths</li>
     </ul>
   </aside>
 
